@@ -24,15 +24,18 @@ export async function getStaticProps() {
 export default function Home({ pokemons }) {
   // Verificar se está no topo ou nao
   const [topo, setTopo] = useState(true);
-  window.onscroll = () => {
-    if (window.pageYOffset > 300) {
-      setTopo(false);
-      console.log(topo)
-    } else {
-      setTopo(true);
-      console.log(topo)
+  window.addEventListener('load', () => {
+    window.onscroll = () => {
+      if (window.pageYOffset > 300) {
+        setTopo(false);
+        console.log(topo)
+      } else {
+        setTopo(true);
+        console.log(topo)
+      }
     }
-  }
+  })
+
 
   const handleClickSubir = () => {
     window.scrollTo({
