@@ -3,6 +3,7 @@
     flex-direction: column;
     width: 80%;
     margin: 0 auto;
+    padding-top: 7%;
 }
 .container {
     display: flex;

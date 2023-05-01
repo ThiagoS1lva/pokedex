@@ -1,0 +1,28 @@
+.title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2%;
+    padding-top: 7%;
+}
+.subir {
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.subir.mostrar {
+    opacity: 1;
+}
+
+.pokemon_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+}
