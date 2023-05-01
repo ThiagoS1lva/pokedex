@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1.2em;
+    margin-bottom: 2em;
+    background-color: #333;
+    color: #fff;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo h1 {
+    margin-left: 1em;
+}
+
+
+.mainMenu {
+    display: flex;
+    list-style: none;
+    margin-right: 1em;
+}
+.texto {
+    font-size: 1.3em;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1em;
+    padding-bottom: 5%;
+    transition: all 200ms ease-in-out;
+    border-bottom: transparent solid 2px;
+}
+.texto:hover {
+    border-bottom: #fff solid 2px;
+}

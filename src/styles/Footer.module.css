@@ -1,0 +1,30 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 15vh;
+    background-color: #333;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.footer p {
+    color: #fff;
+    font-weight: 570;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.footer a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 570;
+    background-color: #fff;
+    padding: 1px;
+    transition: all 200ms ease-in-out;
+}
+.footer a:hover{
+    color: #fff;
+    background-color: black;
+}
