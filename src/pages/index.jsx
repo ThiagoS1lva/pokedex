@@ -23,20 +23,18 @@ export async function getStaticProps() {
   }
 }
 
+
 export default function Home({ pokemons }) {
   // Verificar se está no topo ou nao
   const [topo, setTopo] = useState(true);
   const [search, setSearch] = useState('');
 
-
   useEffect(() => {
     window.onscroll = () => {
       if (window.pageYOffset > 300) {
         setTopo(false);
-        console.log(topo)
       } else {
         setTopo(true);
-        console.log(topo)
       }
     }
   })
