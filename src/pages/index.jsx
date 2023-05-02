@@ -1,7 +1,7 @@
 import styles from '@/styles/Home.module.css'
 import Card from '@/components/Card';
 import { BsFillArrowUpCircleFill } from 'react-icons/bs';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 export async function getStaticProps() {
   const maxPokemons = 151
   const api = 'https://pokeapi.co/api/v2/pokemon/';
@@ -24,7 +24,8 @@ export async function getStaticProps() {
 export default function Home({ pokemons }) {
   // Verificar se está no topo ou nao
   const [topo, setTopo] = useState(true);
-  window.addEventListener('load', () => {
+
+  useEffect(() => {
     window.onscroll = () => {
       if (window.pageYOffset > 300) {
         setTopo(false);
@@ -35,6 +36,7 @@ export default function Home({ pokemons }) {
       }
     }
   })
+
 
 
   const handleClickSubir = () => {
