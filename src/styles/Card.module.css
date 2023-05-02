@@ -5,7 +5,6 @@
     flex-direction: column;
     padding: 1em 1em;
     margin-bottom: 3em;
-    margin-left: 20px;
     width: 31%;
     border-radius: 1em;
     border: 1px solid #e33c339f;
@@ -35,4 +34,11 @@
 .btn:hover {
     background-color: #e33D33;
     color: white;
+}
+
+@media (max-width:768px) {
+    .card {
+        width: 80%;
+        margin: 0 auto 10% auto;
+    }
 }

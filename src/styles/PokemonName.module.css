@@ -1,0 +1,141 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7%;
+    width: 80%;
+    margin: 0 auto 5% auto;
+    justify-content: center;
+    align-items: center;
+}
+.container h1 {
+    margin-bottom: 3%;
+    font-size: 2.5rem;
+    color: #FFF;
+    text-transform: capitalize;
+    background-color: #0D1117;
+    padding: 0.3% 6%;
+}
+.containerB {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1%;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+}
+.containerB p {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 1.1em;
+}
+
+.containerType {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+.tipos {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.type {
+    color: #FFF;
+    background-color: #0D1117;
+    padding: 5% 7%;
+    border-radius: 7px;
+    margin-top: 5%;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+.stats {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+.stats p{
+    margin-top: 20%;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3%;
+}
+.link {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.btns button {
+    padding: 0px 20px 0px 20px;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.431);
+    border-radius: 5px;
+    background-color: #0D1117;
+    color: #fff;
+    transition: all 200ms ease-in-out;
+}
+.btns button:hover {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.898);
+}
+
+
+.type_normal {
+    background-color: #aa9;
+}
+.type_fire {
+    background-color: #f42;
+}
+.type_water {
+    background-color: #39f;
+}
+.type_eletric {
+    background-color: #fc3;
+}
+.type_grass {
+    background-color: #7c5;
+}
+.type_ice {
+    background-color: #6cf;
+}
+.type_fighting {
+    background-color: #b54;
+}
+.type_poison {
+    background-color: #a59;
+}
+.type_ground {
+    background-color: #db5;
+}
+.type_flying {
+    background-color: #89f;
+}
+.type_psychic {
+    background-color: #f59;
+}
+.type_bug {
+    background-color: #ab2;
+}
+.type_rock {
+    background-color: #ba6;
+}
+.type_ghost {
+    background-color: #66b;
+}
+.type_dragon {
+    background-color: #76e;
+}
+.type_dark {
+    background-color: #754;
+}
+.type_steel {
+    background-color: #aab;
+}
+.type_fairy {
+    background-color: #e9e;
+}

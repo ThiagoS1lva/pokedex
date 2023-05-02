@@ -66,3 +66,29 @@
 .link a:hover {
     color: rgb(191, 243, 255);
 }
+
+@media (max-width:768px) {
+    .dad {
+        padding-top: 15%;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .texto {
+        width: 100%;
+    }
+    .texto p {
+        text-align: justify;
+    }
+    .imagem {
+        width: 100%;
+        margin-top: 5%;
+    }
+    .about {
+        width: 100%;
+    }
+    .descricao {
+        width: 90%;
+        padding-top: 5%;
+    }
+}

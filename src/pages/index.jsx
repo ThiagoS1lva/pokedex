@@ -2,6 +2,8 @@ import styles from '@/styles/Home.module.css'
 import Card from '@/components/Card';
 import { BsFillArrowUpCircleFill } from 'react-icons/bs';
 import { useState, useEffect } from 'react';
+
+
 export async function getStaticProps() {
   const maxPokemons = 151
   const api = 'https://pokeapi.co/api/v2/pokemon/';
@@ -24,6 +26,8 @@ export async function getStaticProps() {
 export default function Home({ pokemons }) {
   // Verificar se está no topo ou nao
   const [topo, setTopo] = useState(true);
+  const [search, setSearch] = useState('');
+
 
   useEffect(() => {
     window.onscroll = () => {
@@ -36,15 +40,16 @@ export default function Home({ pokemons }) {
       }
     }
   })
-
-
-
   const handleClickSubir = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     })
   }
+
+  const filteredPokemons = pokemons.filter((pokemon) =>
+    pokemon.name.toLowerCase().includes(search.toLowerCase())
+  );
 
   return (
     <>
@@ -56,9 +61,10 @@ export default function Home({ pokemons }) {
 
       <div className={styles.title}>
         <h1>Pokémons</h1>
+        <input type="text" placeholder="Pesquisar" value={search} onChange={e => setSearch(e.target.value)} />
       </div>
       <div className={styles.pokemon_container}>
-        {pokemons?.map((pokemon) => (
+        {pokemons && filteredPokemons.map(pokemon => (
           <Card key={pokemon.id} pokemon={pokemon} />
         ))}
       </div>

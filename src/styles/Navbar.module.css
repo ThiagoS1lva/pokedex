@@ -34,8 +34,10 @@
     justify-content: center;
     align-items: center;
 }
-.logo h1 {
+.pokedex {
     margin-left: 1em;
+    text-decoration: none;
+    color: #fff;
 }
 
 
@@ -55,4 +57,15 @@
 }
 .texto:hover {
     border-bottom: #fff solid 2px;
+}
+
+@media (max-width:768px) {
+    .navbar{
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    .navbar1 {
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
 }

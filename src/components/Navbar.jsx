@@ -25,8 +25,12 @@ export default function Navbar() {
         <nav className={isTop ? styles.navbar1 : styles.navbar}>
             <div className={styles.container}>
                 <div className={styles.logo}>
-                    <Image src="/images/pokeball.png" alt="Pokeball" width={30} height={30} />
-                    <h1>Pokedex</h1>
+                    <Link href="/">
+                        <Image src="/images/pokeball.png" alt="Pokeball" width={30} height={30} />
+                    </Link>
+                    <Link href="/" className={styles.pokedex}>
+                        <h1>Pokedex</h1>
+                    </Link>
                 </div>
                 <ul className={styles.mainMenu}>
                     <li>
