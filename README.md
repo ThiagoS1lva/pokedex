@@ -1,6 +1,6 @@
 # Pokedex
 
-Este é um projeto desenvolvido com React.js e a PokeAPI, uma API para informações de Pokémon.
+Este é um projeto desenvolvido com Next.js e a PokeAPI, uma API para informações de Pokémon.
 
 Hospedagem: https://pokedex-pi-sable.vercel.app/
 
